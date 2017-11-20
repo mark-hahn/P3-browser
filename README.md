@@ -1,6 +1,6 @@
 # app
 
-> Browser single-page app to control XY
+> Browser single-page app to control P3
 
 ## Build Setup
 
