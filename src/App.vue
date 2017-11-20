@@ -54,9 +54,9 @@
       <img id="logo" @click="home()" src="src/assets/eridien-logo.jpg">
       <div id="page-title"> P3 {{$route.meta.name}} </div>
       <div id="nav-bar">
-        <router-link class="nav-btn" to="/ZDemo">
+        <!-- <router-link class="nav-btn" to="/ZDemo">
           <a>Z Demo</a>
-        </router-link>
+        </router-link> -->
         <router-link class="nav-btn" to="/Terminal">
           <a>Terminal</a>
         </router-link>
@@ -77,7 +77,7 @@
   export default {
     name: 'app',
     data() { return {
-      curPage: 'zdemo'
+      curPage: 'network'
     }},
     methods: {
       home: function()  {

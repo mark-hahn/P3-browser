@@ -2,7 +2,7 @@ import Vue       from 'vue'
 import App       from './App.vue'
 import VueRouter from 'vue-router'
 import netComp   from "./network/network-page.vue"
-import zdemoComp from "./zdemo/z-demo.vue"
+// import zdemoComp from "./zdemo/z-demo.vue"
 
 Vue.use(VueRouter);
 window.eventBus = new Vue();
@@ -14,8 +14,8 @@ const Terminal = { template: '<div>Terminal</div>' }
 const Apps     = { template: '<div>Apps</div>' }
 
 const router = new VueRouter({ routes: [
-  {path: '/', redirect: '/ZDemo'},
-  {path: '/zdemo',     component: zdemoComp,  meta:{name:'ZDemo'}},
+  {path: '/', redirect: '/Network'},
+  // {path: '/zdemo',     component: zdemoComp,  meta:{name:'ZDemo'}},
   {path: '/terminal',  component: Terminal,   meta:{name:'Terminal'}},
   {path: '/apps',      component: Apps,       meta:{name:'Apps'}},
   {path: '/network',   component: netComp,    meta:{name:'Network'}}
